@@ -1,0 +1,8 @@
+[user]
+    # email = lipe0895@hotmail.com
+    # name = Luiz Felipe dos santos silva («login»)
+    email = lipe0895@hotmail.com
+    name = Luiz Silva
+
+[alias]
+    lg = log --oneline --decorate --all --graph
