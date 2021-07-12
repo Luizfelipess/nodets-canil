@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import { createMenuObject } from '../helpers/createMenuObjects';
 import { Pet } from '../models/pet'
 
+//params page home
 const home = (req: Request, res: Response) => {
     let list = Pet.getAll();
 
@@ -17,6 +18,7 @@ const home = (req: Request, res: Response) => {
 
 export { home };
 
+//params page dogs
 const dogs = (req: Request, res: Response) => {
     let list = Pet.getFromType('dog');
     res.render('pages/page', {
@@ -31,6 +33,7 @@ const dogs = (req: Request, res: Response) => {
 
 export { dogs };
 
+//params page cats
 const cats = (req: Request, res: Response) => {
     let list = Pet.getFromType('cat');
     res.render('pages/page', {
@@ -45,6 +48,7 @@ const cats = (req: Request, res: Response) => {
 
 export { cats };
 
+//params page fishes
 const fishes = (req: Request, res: Response) => {
     let list = Pet.getFromType('fish');
     res.render('pages/page', {
